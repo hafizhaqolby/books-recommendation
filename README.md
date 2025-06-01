@@ -1,8 +1,6 @@
 
 # Book Recommendation System using Content-Based Filtering
 
-## 👩‍💻 Nama: Angel
-
 ---
 
 ## 📌 Project Overview
@@ -29,6 +27,8 @@ We use Content-Based Filtering with TF-IDF vectorization on book titles and auth
 ---
 
 ## 📂 Data Understanding
+
+The dataset used is [GoodBooks-10k](https://www.kaggle.com/datasets/zygmunt/goodbooks-10k), which contains book metadata and user ratings.
 
 The dataset used includes the following:
 - `books.csv`: Contains metadata of books such as `title`, `authors`, `average_rating`.
@@ -79,11 +79,4 @@ Example of features:
 
 This project shows how a simple content-based approach can deliver meaningful recommendations. Future work can incorporate genres, descriptions, and user preferences for hybrid systems.
 
----
-
-## 📚 References
-
-- Ricci, F., Rokach, L., & Shapira, B. (2015). Recommender Systems Handbook. Springer.
-- Aggarwal, C. C. (2016). Recommender Systems: The Textbook. Springer.
-- [Goodreads Book Dataset - Kaggle](https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset)
 
