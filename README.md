@@ -73,6 +73,7 @@ The dataset used is [GoodBooks-10k](https://www.kaggle.com/datasets/zygmunt/good
 - The dataset includes more than 10,000 books.
 ### 1. Distribution of Book Ratings
 The histogram shows that most books have an average rating between 3.5 and 4.3, peaking around 4.0. The distribution is approximately normal with a slight right skew, indicating that high ratings are common, while very low or very high ratings are rare. This supports the use of 4.0 as a relevance threshold in evaluating recommendation performance (e.g., for Precision@K).
+![Distribution of Book Rating](rating.png)
 
 ### 2. Top 10 Authors with Most Books
 The dataset reveals **Stephen King** as the most prolific author with the highest number of books (60), followed by:
