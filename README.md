@@ -170,18 +170,6 @@ def recommend(title_partial, df=books, similarity=cosine_sim, top_n=5):
     book_indices = [i[0] for i in sim_scores]
     return df.iloc[book_indices][['title', 'authors', 'average_rating']]
 ```
-
----
-
-## 🧪 Evaluation
-
-- We use **Precision@K** as the evaluation metric, where K = 5.
-- A book is considered relevant if it has an average rating >= 4.0.
-- Example:
-  ```
-  Showing recommendations for: Hunger Games
-  Precision@5 for 'Hunger Games': 0.20
-  ```
 - Here is an example of the top-5 book recommendations when the input is:
   ```
   recommend("Hunger Games")
@@ -196,6 +184,18 @@ def recommend(title_partial, df=books, similarity=cosine_sim, top_n=5):
 | Nostromo                                             | Joseph Conrad         | 3.81           |
 | The Mill on the Floss                                | George Eliot, A.S.    | 3.77           |
 ```
+
+---
+
+## 🧪 Evaluation
+
+- We use **Precision@K** as the evaluation metric, where K = 5.
+- A book is considered relevant if it has an average rating >= 4.0.
+- Example:
+  ```
+  Showing recommendations for: Hunger Games
+  Precision@5 for 'Hunger Games': 0.20
+  ```
 
 ---
 
